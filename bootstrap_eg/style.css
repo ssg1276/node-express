@@ -1,0 +1,8 @@
+.row {
+    border: solid 1px black;
+    margin-top: 50px;
+    height: 200px;
+}
+[class*="col-"], .col {
+    border: solid 1px red;
+}

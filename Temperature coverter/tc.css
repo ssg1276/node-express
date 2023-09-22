@@ -1,0 +1,137 @@
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+body{
+    background: #081b29;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    text-align: center;
+    min-height: 100vh;
+}
+
+.container{
+    max-width: 550px;
+    border: 1px solid white;
+    
+    border-radius: 8px;
+    box-shadow: 5px 5px 7px 0px  #00abf0;
+    padding: 20px;
+    border: none;
+
+}
+.title{
+    color: azure;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    flex-wrap: wrap-reverse;
+    gap: 10px;
+}
+
+h1{
+    font-size: 45px;
+}
+.fa-solid{
+    font-size: xx-large;
+    margin-top: 18px;
+    margin-left: 5px;
+}
+
+.icon{
+    color: azure;
+    font-size: 30px;
+    flex: 1;
+    height: 60px;
+    line-height: 60px;
+    pad: 0 5px;
+    text-align: center;
+    border-radius: 0 8px 8px 0;
+    background:#00abf0;
+}
+
+#celcius, #fahrenheit, #kelvin{
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    margin-top: 25px;
+}
+
+input{
+    flex: 5;
+    height: 60px;
+    font-size: 20px;
+    font-weight: 600;
+    border-radius: 8px 0 0 8px;
+    text-align: center;
+    border:none;
+    outline: none;
+    padding: 0px 10px;
+}
+
+input::-webkit-outer-spin-button,
+input::-webkit-inner-spin-button{
+    -webkit-appearance: none;
+}
+ 
+/* input{
+    -moz-appearance: textfield;
+} */
+
+.btn2{
+    display: block;
+    margin: 50px auto;
+    width: fit-content;
+   /* border: 1px solid #ff004f; */
+    padding: 14px 15px;
+    border-radius: 8px;
+    text-decoration: none;
+    background-color: #070707;
+    color: azure;
+    font-size: 14px;
+    font-weight: 700;
+    cursor: pointer;
+    box-shadow: 5px 5px 7px 0px #00abf0;
+    position: relative;
+    z-index: 1;
+}
+
+.btn2::before{
+    content: "";
+    background-color: #00abf0;
+    position: absolute;
+    top: 0;
+    left: 0;
+    right: 0;
+    bottom: 0;
+    transform:scaleX(0);
+    transform-origin: left;
+    transition: all 0.8s;
+    z-index: -1;
+    border-radius: 8px;
+}
+
+.btn2:hover::before{
+    transform: scaleX(1);
+}
+
+
+@media only screen and (max-width:600px){
+    h1{
+        font-size: 29px;
+    }
+    
+    .icon{
+        height: 48px;
+    }
+    input{
+        height: 48px;
+    }
+
+    .btn2{
+        margin-top: 30px;
+    }
+}
