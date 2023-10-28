@@ -1,0 +1,86 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Rock,Paper & Scissors Game</title>
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Barlow:wght@100;600&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="rps.css">
+</head>
+<body>
+     <div class="wrapper">
+           <div class="score">
+            <div class="list">
+                <ul>
+                    <li>ROCK</li>
+                    <li>PAPER</li>
+                    <li>SCISSORS</li>
+                </ul>
+            </div>
+        <div class="score12">
+            <div class="sdisplay chances" >
+                <p>CHANCES LEFT</p>
+                <h1>-</h1>
+            </div>
+            <div class="sdisplay play" >
+                <p>PLAYER'S SCORE</p>
+                <h1>0</h1>
+            </div>
+            <div class="sdisplay comp">
+                <p>COMPUTER'S SCORE</p>
+                <h1>0</h1>
+            </div>
+        </div>
+           </div>
+
+           <div class="selectgame">
+            <h1>Select number of tries:</h1>
+            <div class="btnselect">
+                <button onclick="choosegame1()">3</button>
+                <button onclick="choosegame2()">5</button>
+            </div>
+           </div>
+        <div class="hands">
+                <div class="hand scissor" >
+                  <img  src="Scissors.png"   onclick="randomFind('scissor') " alt="" >
+                </div>
+                <div class="hand paper" >
+                     <img  src="Paper.png" onclick="randomFind('paper')" alt="" >
+                </div>
+                   <div class="hand rock" >
+                          <img  src="Rock.png" onclick="randomFind('rock')" alt="" >
+                    </div>
+        </div>
+           <div class="result">
+            <div class="result1">
+                <h1>Player</h1> 
+                <img id="playerPickimg" src="Paper.png" alt="" >
+                
+            </div>
+            <div class="result2">
+                <div class="decision"><h1>YOU LOSE!</h1> </div>
+                <div class="result2button" onclick="restartGame()">
+                    <p>Play Again</p>
+                </div>
+                <div class="result2button new" onclick="newGame()">
+                    <p>New Game</p>
+                </div>
+
+            </div>
+            <div class="result3">
+                <h1>Computer</h1>
+                <img id="computerPickimg"src="Scissors.png" alt="" >
+
+            </div>
+           </div>
+           
+     
+
+
+
+
+    <script type="text/javascript" src="rps.js"></script>
+</body>
+</html>

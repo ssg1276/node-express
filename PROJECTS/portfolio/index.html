@@ -1,0 +1,177 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="icon" href="ssg-logo.png"> 
+    <title>Portfolio-SSG</title>
+    <link rel="stylesheet" href="portfolio.css">
+    <script src="https://kit.fontawesome.com/be611bbd13.js" crossorigin="anonymous"></script>
+</head>
+<body>
+    <div id="header">
+        <div class="container">
+            <nav>
+                <img src="ssg-logo.png">
+                <ul id="sidemenu">
+                    <li><a href="#header">Home</a></li>
+                    <li><a href="#about">About</a></li>
+                    <li><a href="#services">Services</a></li>
+                    <li><a href="#portfolio">Portfolio</a></li>
+                    <li><a href="#contact">Contact</a></li>
+                    <i class="fa-solid fa-xmark" onclick="closemenu()"></i>
+                </ul>
+                <i class="fa-solid fa-bars" onclick="openmenu()"></i>
+            </nav>
+            <div class="header-text">
+                <p>Web Developer</p>
+                <h1>Hi, I'm <span>S</span>ahil <span>S</span>ingh <br><span>G</span>uleria </h1>
+            </div>
+
+        </div>
+    </div>
+    <div id="about">
+        <div class="container">
+            <div class="row">
+                <div class="col1">
+                    <img src="pp.jpg" >
+                </div>
+                <div class="col2">
+                    <h1 class="textcol2">About me</h1>
+                    <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Quos illo, mollitia optio in exercitationem explicabo omnis et veritatis porro suscipit iure. Obcaecati, architecto perspiciatis neque adipisci accusantium eveniet illo incidunt?</p>
+                    <div class="tab-titles">
+                        <p class="tab-links active-link" onclick="opentab('skills')">Skills</p>
+                        <p class="tab-links" onclick="opentab('experience')">Experience</p>
+                        <p class="tab-links" onclick="opentab('education')">Education</p>
+                    </div>
+                    <div class="tab-contents activetab" id="skills">
+                        <ul class="flexul">
+                            <li><img src="919827.png"></li>
+                            <li><img src="css.png"></li>
+                            <li><img src="images.png"></li>
+                            <li><img src="download.jpeg"></li>
+                            <li><img src="5968332.png"></li>
+                            <li><img src="download12.png"></li>
+                            <!-- <li>C++</li> -->
+                            <!-- <li>DBMS & PHP</li> -->
+                        </ul>
+                    </div>
+                    <div class="tab-contents" id="experience">
+                        <ul>
+                            <li>WEB DEVELOPER INTERN @ BHARAT INTERN <br><span>10/SEP/2023-PRESENT</span><a href="#" ><i class="fa-solid fa-link fa-l" style="color: #e8eaed;"></i></a></li>
+                            <li>WEB DEVELOPMENT TRAINING @ INTERNSHALA <br><span>25/JUNE/2023-26/AUG/2023</span><a href="https://trainings.internshala.com/s/v/3120724/4a429ba9" target="_blank"><i class="fa-solid fa-link fa-l" style="color: #e8eaed;"></i></a></li>
+                            <!-- <li>JAVASCRIPT</li> -->
+                        </ul>
+                    </div>
+                    <div class="tab-contents" id="education">
+                        <ul>
+                            <li>B.Tech in Electronics & Communication Engineering<br>
+                                Shri Mata Vaishno Devi University, Kakriyal (Katra) <br><span>NOV/2020-PRESENT</span></li>
+                            <li>Higher Secondary School (XII)<br>RJSPM Junior College, Pune<br><span>APR/2018-MAY/2019</span></li>
+                            <li>Secondary School (X)<br>Army Public School, Bathinda<br><span>MAR/2017-APR/2018</span></li>
+                        </ul>
+                    </div>
+
+                </div>
+            </div>
+        </div>
+    </div>
+
+    <div id="services">
+        <div class="container">
+            <h1 class="textcol2">Services</h1>
+            <div class="services-list">
+                <div>
+                    <i class="fa-solid fa-code fa-xl" style="color: #ff004f;"></i>
+                    <h2>Web Design</h2>
+                    <p>Lorem ipsum dolor, sit amet consectetur adipisicing elit. Reiciendis molestiae sunt consequatur, iste nobis amet dolorem illo ad beatae et itaque ipsam accusamus quibusdam aspernatur odio recusandae minus voluptate fugit.</p>
+                    <a href="#" >Learn more</a>
+
+                </div>
+                <div>
+                    <i class="fa-solid fa-crop-simple fa-xl" style="color: #ff004f;"></i>
+                    <h2>Front-End</h2>
+                    <p>Lorem ipsum dolor, sit amet consectetur adipisicing elit. Reiciendis molestiae sunt consequatur, iste nobis amet dolorem illo ad beatae et itaque ipsam accusamus quibusdam aspernatur odio recusandae minus voluptate fugit.</p>
+                    <a href="#" >Learn more</a>
+
+                </div>
+                <div>
+                    <i class="fa-solid fa-crop-simple fa-xl" style="color: #ff004f;"></i>
+                    <h2>Back-End</h2>
+                    <p>Lorem ipsum dolor, sit amet consectetur adipisicing elit. Reiciendis molestiae sunt consequatur, iste nobis amet dolorem illo ad beatae et itaque ipsam accusamus quibusdam aspernatur odio recusandae minus voluptate fugit.</p>
+                    <a href="#" >Learn more</a>
+
+                </div>
+            </div>
+        </div>
+    </div>
+
+<div id="portfolio">
+    <div class="container">
+        <h1 class="textcol2">Projects</h1>
+        <div class="work-list">
+            <div class="work">
+                <img src="work-1.png" >
+                <div class="layer">
+                    <h3>Netflix Clone</h3>
+                    <p>Tried to clone Netflix website to get a good grip on HTML, CSS && JAVASCRIPT skills and Using TMDB API and youtube API for better UI experience. </p>
+                    <a href="https://ssg1276.github.io/Netflix-clone/" target="_blank"><i class="fa-solid fa-arrow-up-right-from-square"></i></a>
+                </div>
+            </div>
+            <div class="work">
+                <img src="work-2.png" >
+                <div class="layer">
+                    <h3>Password Generator</h3>
+                    <p>Designed a Password Generator website by using HTML,CSS & JS. </p>
+                    <a href="https://ssg1276.github.io/Password-Generator/" target="_blank"><i class="fa-solid fa-arrow-up-right-from-square"></i></a>
+                </div>
+                </div>
+            <div class="work">
+                <img src="work-3.png" >
+                <div class="layer">
+                    <h3>Rock,Paper & Scissors Game</h3>
+                    <p>Designed the game by using HTML,CSS & JS. </p>
+                    <a href="https://ssg1276.github.io/Rock-Paper--Scissors-Gam/" target="_blank"><i class="fa-solid fa-arrow-up-right-from-square"></i></a>
+                </div>
+            </div>
+        </div>
+        <a href="https://github.com/ssg1276?tab=repositories" class="btn" target="_blank">See More</a>
+    </div>
+</div>
+
+<div id="contact">
+    <div class="container">
+        <div class="row">
+            <div class="contact-left">
+                <h1 class="textcol2">Contact Me</h1>
+                <p><i class="fa-solid fa-paper-plane"></i> guleriasahilsingh@gmai.com</p>
+                <p><i class="fa-solid fa-square-phone"></i> 9622656409</p>
+                <div class="social-icons">
+                    <a href="https://www.instagram.com/guleria.sahilsingh/" target="_blank"><i class="fa-brands fa-instagram"></i></a>
+                    <a href="https://github.com/ssg1276" target="_blank"><i class="fa-brands fa-github"></i></i></a>
+                    <a href="https://www.linkedin.com/in/sahil-singh-guleria-15910321b/" target="_blank"><i class="fa-brands fa-linkedin"></i></a>
+                </div>
+                <a href="portfolio/SAHIL_SINGH_GULERIA%20(2).pdf" download class="btn btn2 ">Download CV</a>
+            </div>
+            <div class="contact-right">
+                <form name="submit-to-google-sheet">
+                    <input type="text" name="Name" placeholder="Your Name" required>
+                    <input type="email" name="Email" placeholder="Your Email-Id"  required>
+                    <textarea name="Message" rows="6" placeholder="Your Message"></textarea>
+                    <button type="submit" class="btn btn2">Submit</button>
+                    <button type="reset" class="btn btn2">Reset</button>
+                </form>
+                <span id="msg"></span>
+            </div>
+        </div>
+    </div>
+    <div class="copyright">
+        <p>Copyright @ SSG.</p>
+    </div>
+</div>
+
+    <script type="text/javascript" src="portfolio.js"></script>
+
+    
+</body>
+</html>
